@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/visitors.css">
+    <title>Transpose Notes</title>
+    <script defer src="/js/transpose.js"></script> <!-- Link JavaScript -->
+</head>
+
+<body>
+    <section class="transposition">
+        <div class="container">
+            <textarea id="notes" placeholder="Enter notes here... C D E F# G"></textarea>
+
+            <div class="input">
+                <label for="distance">Transpose (Half Steps -12 to +12):</label>
+                <input type="number" id="distance" min="-12" max="12" value="0">
+
+                <label for="accidental">Sharp (#) or Flat (b):</label>
+                <select id="accidental">
+                    <option value="1">Sharp (#)</option>
+                    <option value="2">Flat (b)</option>
+                </select>
+            </div>
+
+            <button id="transpose-button" onclick="transposeNotes()">Transpose</button>
+
+            <textarea id="output" readonly placeholder="Transposed notes will appear here... D E F G"></textarea>
+            <div class="copy">
+                <button id="copyButton">Copy</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

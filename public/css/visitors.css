@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/Neue%20Montreal%20Font%20Family/NeueMontreal-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/Neue%20Montreal%20Font%20Family/NeueMontreal-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/Neue%20Montreal%20Font%20Family/NeueMontreal-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/Neue%20Montreal%20Font%20Family/NeueMontreal-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/Neue%20Montreal%20Font%20Family/NeueMontreal-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* PP Neue Montreal */
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PP%20Neue%20Montreal%20Font%20Family/NeueMontrealMono-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PP%20Neue%20Montreal%20Font%20Family/NeueMontrealMono-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PP%20Neue%20Montreal%20Font%20Family/NeueMontrealMono-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PP%20Neue%20Montreal%20Font%20Family/NeueMontrealMono-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PP%20Neue%20Montreal%20Font%20Family/NeueMontrealMono-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+:root {
+    --soft-mist: #E8E8E3;
+    --pale-sand: #D1D1C7;
+    --cloudy-stone: #A29E9B;
+    --dusty-stone: #7E766C;
+    --earth-tone: #6B645C;
+    --earth-coal: #393732;
+    --deep-charcoal: #0A0A09;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Neue Montreal', sans-serif;
+    background-color: var(--soft-mist);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 40rem;
+    border: 1px solid black;
+    padding: 4rem 2rem;
+    border-radius: .5rem;
+}
+
+.transposition .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.transposition .input {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+
+.transposition #transpose-button {
+    padding: 1rem 0rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #0A0A09;
+    color: #E8E8E3;
+    margin-bottom: 4rem;
+}
+
+
+.transposition textarea {
+    width: calc(100% - 2.5rem);
+    height: 20rem;
+    border-radius: .5rem .5rem 0 0;
+    padding: 1.25rem;
+    resize: vertical;
+}
+
+.transposition .copy {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 0 0 .5rem .5rem;
+    justify-content: end;
+    background-color:#D1D1C7 ;
+}
+
+.transposition button {
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: none;
+}
+
+.transposition button:hover {
+    cursor: pointer;
+}
