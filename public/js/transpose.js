@@ -22,8 +22,10 @@ function transposeNotes() {
     let output = document.getElementById('output');
 
     // Match notes, words, and spaces separately
-    let notesArray = inputNotes.match(/\s+|[A-G#b]+|[a-zA-Z]+|\/+/g);
+    let notesArray = inputNotes.match(/(\s+)|(?<![A-Za-z0-9#b])([A-G](?:#|b)?)(?=(m)?(?![A-Za-z0-9#b]))|([^\w\s])|(\w+)/g);
     let transposedNotes = [];
+
+    console.log(notesArray)
 
     for (let note of notesArray) {
         if (note.trim() === "") {
